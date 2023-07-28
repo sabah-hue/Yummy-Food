@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>YUMMY</title>
+  </head>
+  <body>
+
+   <div class="loading-screen position-fixed start-0 top-0 bottom-0 end-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>  
+
+  <nav class="side-nav d-flex position-fixed min-vh-100 top-0">
+    <div class="nav-tab p-4 d-flex flex-column justify-content-between min-vh-100">
+      <div class="links">
+        <ul class="list-unstyled overflow-hidden">
+          <li onclick="getSearchPage()" class="cursor-pointer py-2 position-relative">search</li>
+          <li onclick="getallCategories()" class="cursor-pointer py-2 position-relative">categories</li>
+          <li onclick="getallAreas()" class="cursor-pointer py-2 position-relative">Area</li>
+          <li onclick="getIngrediant()" class="cursor-pointer py-2 position-relative">Ingredient</li>
+          <li onclick="getContact()" class="cursor-pointer py-2 position-relative">contact us</li>
+        </ul>
+      </div>
+
+      <div class="nav-footer">
+         <div class="icons py-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+         </div>
+         <div class="footer">
+            <p>CopyRight 2023 All Rights <br> Reserved </p>
+         </div>
+      </div>
+    </div>
+
+    <div class="nav-header d-flex flex-column justify-content-between py-4 text-center bg-white text-dark">
+      <img  class="logo " src="img/logo.png" alt="Yummy logo">
+      <i class=" fa-solid fa-align-justify fa-2x open-close-icon"></i>
+      <div >
+        <i class="fa-solid fa-globe d-block my-2"></i>
+        <i class="fa-sharp fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+    
+  </nav>
+<!-- ------------------- Data section --------------------- -->
+<section >
+  <!-- <div class="container w-75">
+    <div class="inner-loading-screen position-fixed start-0 top-0 bottom-0 end-0 bg-black overflow-hidden justify-content-center align-items-center">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div> -->
+
+    <div class="row  g-4 py-2" id="dataSearch">
+    </div>
+  </div>
+    <div class="container" >
+      <div class="row g-4 py-5" id="dataSec">
+        
+
+
+      </div>
+    </div>
+</section>
+
+
+<!-- ///////////////////////////////////// -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
